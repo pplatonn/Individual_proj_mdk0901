@@ -1,23 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title id="titl">Recipe Finder</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/fonts.css" />
     <style>
-        section:last-child{
+        section:last-child {
             position: relative;
             left: -9999px;
-            margin-top: -400px;}
-        button:last-of-type{
+            margin-top: -500px;
+        }
+
+        button:last-of-type {
             position: relative;
-            left: 9999px;}
+            left: 9999px;
+        }
     </style>
 </head>
+
 <body>
-    <section id="result">
-        
-    </section>
+
+    <header>
+        <div class="container">
+            <nav>
+                <img src="./assets/graphics/logo.jpg" alt="логотип" id="logo" />
+                <ul class="menu">
+                    <li class="menu__title"><a href="./index.html">Find a recipe</a></li>
+                    <li class="menu__title"><a href="./comm_r.php">Community Recipes</a></li>
+                    <li class="menu__title"><a href="./add.php">Add recipe</a></li>
+                    <li class="menu__title"><a href="./favorites.html">Favorites</a></li>
+                </ul>
+                <img src="./assets/graphics/change-theme.svg" alt="change theme" id="changeTheme" />
+            </nav>
+        </div>
+    </header>
+
+    <section id="result1"></section>
+
+    <footer>
+        <div class="container">
+            <nav>
+                <ul class="footer_menu">
+                    <li class="footer_menu__title"><a href="./index.html">Find a recipe</a></li>
+                    <li class="footer_menu__title"><a href="./comm_r.php">Community Recipes</a></li>
+                    <li class="footer_menu__title"><a href="./add.php">Add recipe</a></li>
+                    <li class="footer_menu__title"><a href="./favorites.html">Favorites</a></li>
+                </ul>
+                <a href="mailto:viberecipes@gmail.com">viberecipes@gmail.com</a>
+                <span>(с) all rights reserved</span>
+            </nav>
+        </div>
+    </footer>
+
     <script src="./assets/js/script2.js"></script>
+    <script src="./assets/js/main.js"></script>
 </body>
+
 </html>
