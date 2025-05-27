@@ -1,4 +1,4 @@
-const resultDiv = document.getElementById('result');
+const resultDiv = document.getElementById('favorite');
 
 resultDiv.insertAdjacentHTML("afterbegin", localStorage.getItem('favs'))
 
@@ -18,7 +18,7 @@ function removeExactText(node, targetText) {
     });
 }
 function addfav(x) {
-    alert('Удалено из избранного!')
+    alert('Deleted from favorites!')
     x.remove()
     favsStr=resultDiv.outerHTML
     localStorage.setItem('favs', favsStr);
