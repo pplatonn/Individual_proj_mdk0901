@@ -1,15 +1,62 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recipe Finder</title>
+    <title>Recipe Finder 🔎</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/fonts.css" />
 </head>
+
 <body>
-    <form id="apiForm" action="#" method="post">
-        <input type="text" placeholder="What recipe are you looking for?" id="recept">
-        <button type="submit">Find</button>
-    </form>
+
+    <header>
+        <div class="container">
+            <nav>
+                <img src="./assets/graphics/logo.jpg" alt="логотип" id="logo" />
+                <ul class="menu">
+                    <li class="menu__title"><a href="./index.html">Find a recipe</a></li>
+                    <li class="menu__title"><a href="./comm_r.php">Community Recipes</a></li>
+                    <li class="menu__title"><a href="./add.php">Add recipe</a></li>
+                    <li class="menu__title"><a href="./favorites.html">Favorites</a></li>
+                </ul>
+                <img src="./assets/graphics/change-theme.svg" alt="change theme" id="changeTheme" />
+            </nav>
+        </div>
+    </header>
+
+    <section class="search">
+        <div class="container">
+            <h1>Find any recipe!</h1>
+            <span>practically :)</span>
+            <form action="" class="search__form" method="post" id="apiForm">
+                <label for="recept" hidden></label>
+                <div class="search__form-input">
+                    <input type="text" id="recept" placeholder="Enter the name of the recipe..." required />
+                    <button type="submit"><img src="./assets/graphics/arrow.svg" alt="найти" /></button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <nav>
+                <ul class="footer_menu">
+                    <li class="footer_menu__title"><a href="./index.html">Find a recipe</a></li>
+                    <li class="footer_menu__title"><a href="./comm_r.php">Community Recipes</a></li>
+                    <li class="footer_menu__title"><a href="./add.php">Add recipe</a></li>
+                    <li class="footer_menu__title"><a href="./favorites.html">Favorites</a></li>
+                </ul>
+                <a href="mailto:viberecipes@gmail.com">viberecipes@gmail.com</a>
+                <span>(с) all rights reserved</span>
+            </nav>
+        </div>
+    </footer>
+
     <script src="./assets/js/script0.js"></script>
+    <script src="./assets/js/main.js"></script>
 </body>
+
 </html>
