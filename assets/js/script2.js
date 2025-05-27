@@ -1,5 +1,5 @@
 const titl=document.getElementById('titl');
-const result = document.getElementById("result")
+const result = document.getElementById("result1")
 const urlParams = new URLSearchParams(window.location.search);
 const paramData = urlParams.get('id');
 const url = "https://api.spoonacular.com/recipes/" + paramData + "/information?apiKey=e6b5fb4461c4461ea694f28b90f43d5b"
@@ -31,16 +31,16 @@ fetch(url)
 
         result.insertAdjacentHTML("beforeend",
             '<section>'
-            + '<h2>' + JSON.stringify(data.title).replaceAll('"', '') + '</h2>'
             + '<img src=' + JSON.stringify(data.image) + '>'
+            + '<h2>' + JSON.stringify(data.title).replaceAll('"', '') + '</h2>'
             + '<button onclick="torecept(' + JSON.stringify(data.id) + ')">Recept</button>'
-            + '<button onclick="addfav(this.parentNode)">to favorites</button>'
+            + '<button onclick="addfav(this.parentNode)" class="favbtns">to favorites</button>'
             + '</section>'
         )
     })
 
 function addfav(x){
-    alert('Добавлено в избранное!')
+    alert('Added to favorites!')
     favsStr=""
     favsStr+=localStorage.getItem('favs')
     favsStr+=x.outerHTML
