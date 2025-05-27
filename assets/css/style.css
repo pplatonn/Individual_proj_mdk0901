@@ -1,0 +1,487 @@
+/* BASIC PAGE STYLES */
+
+:root {
+    --beige: #F5EBE1;
+    --dark-brown: #6C584C;
+    --menu-fsize: 1.2vw;
+    --heading-fsize: 4vw;
+    --green: #9FB25F;
+    --red: #F1584B;
+    --text-color: #2A1E17;
+    --header-bg: #FFFFFF;
+}
+
+[data-theme="dark"] {
+    --beige: #251f15;
+    --dark-brown: #050403;
+    --text-color: #f0f0f0;
+    --header-bg: #2A1E17;
+    --green: #8A9E5B;
+    --red: #C44D42;
+    --header-bg: #38312c;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.container {
+    width: 1440px;
+    margin: 0 auto;
+}
+
+body {
+    transition: background-color 0.3s, color 0.3s;
+    font-family: "Monts-Reg", sans-serif;
+    color: var(--text-color);
+    background-color: var(--beige);
+}
+
+a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+input,
+button {
+    font-family: "Monts-Reg", sans-serif;
+}
+
+#logo {
+    width: 90px;
+    border-radius: 50px;
+}
+
+#changeTheme:hover {
+    cursor: pointer;
+}
+
+/* HEADER STYLES START  */
+
+header {
+    background-color: var(--header-bg);
+    font-size: var(--menu-fsize);
+    margin-bottom: 100px;
+    height: 190px;
+    padding-top: 50px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    width: 65%;
+    list-style: none;
+}
+
+.menu__title a {
+    color: var(--text-color);
+}
+
+/* FOOTER STYLES START  */
+
+footer {
+    background-color: var(--dark-brown);
+    padding-top: 52px;
+    color: #fff;
+    font-size: var(--menu-fsize);
+}
+
+footer nav {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    flex-direction: column;
+    color: #fff;
+}
+
+.footer_menu__title {
+    list-style: none;
+    margin-bottom: 2px;
+}
+
+.footer_menu__title a,
+footer nav a {
+    color: #fff;
+}
+
+.footer_menu {
+    margin-bottom: 40px;
+}
+
+footer nav a {
+    margin-bottom: 20px;
+}
+
+/* RECIPE STYLES START  */
+
+#result1 {
+    width: 1440px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+
+#result1 img {
+    width: 670px;
+    border-radius: 25px;
+    margin-right: 200px;
+}
+
+#result1 p {
+    line-height: 160%;
+    font-size: var(--menu-fsize);
+}
+
+#result1 h1 {
+    margin-bottom: 20px;
+    font-size: var(--heading-fsize);
+}
+
+#result1 h2 {
+    margin:25px 0;
+}
+
+#result1 li{
+    line-height: 160%;
+    font-size: var(--menu-fsize);
+}
+
+#result1 button {
+    margin-left: 30px;
+    font-size: 1vw;
+    margin-bottom: 10px;
+    color: #fff;
+    background-color: var(--red);
+    width: 50%;
+    cursor: pointer;
+    height: 50px;
+    border-radius: 40px;
+    border: none;
+}
+
+/* SEARCH PAGE STYLES  */
+
+.search {
+    text-align: center;
+}
+
+.search .container h1 {
+    font-size: var(--heading-fsize);
+}
+
+.search .container span {
+    font-size: var(--menu-fsize);
+    margin-bottom: 40px;
+}
+
+.search__form {
+    margin: 50px auto 0 auto;
+    width: 80%;
+    text-align: center;
+}
+
+.search__form-input {
+    width: 70%;
+    margin: 0 auto;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 180px;
+}
+
+.search__form-input input {
+    width: 85%;
+    height: 100%;
+    font-size: var(--menu-fsize);
+    padding-left: 40px;
+    border: none;
+    border-radius: 50px 0 0 50px;
+    margin: 0 auto;
+    color: #aeaeae;
+}
+
+.search__form-input button {
+    width: 15%;
+    height: 100%;
+    background-color: var(--green);
+    font-size: var(--menu-fsize);
+    padding-left: 40px;
+    border: none;
+    border-radius: 0 50px 50px 0;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.search__form-input img {
+    width: 40%;
+}
+
+/* COMMUNITY PAGE STYLES  */
+#comm {
+    margin-bottom: 20px;
+}
+
+#comm section{
+    border-radius: 50px;
+    background-color: var(--header-bg);
+    margin: 50px;
+    padding: 50px;
+    line-height: 160%;
+    font-size: var(--menu-fsize);
+}
+
+#comm img {
+    border-radius: 25px;
+    width: 50%;
+}
+
+#comm h2 {
+    width: 75%;
+    margin:25px 0;
+    font-size: 2vw;
+    color: var(--text-color);
+}
+
+#comm h1 {
+    margin-bottom:50px;
+}
+
+#comm button {
+    position: relative;
+    top:-50px;
+    margin-left: 50px;
+    margin-bottom:-50px;
+    font-size: 1vw;
+    color: #fff;
+    background-color: var(--red);
+    width: 50%;
+    cursor: pointer;
+    height: 50px;
+    border-radius: 40px;
+    border: none;
+}
+
+#comm input {
+    font-size: 1vw;
+    margin-top: 25px;
+    color: #fff;
+    background-color: var(--red);
+    width: 50%;
+    cursor: pointer;
+    height: 50px;
+    border-radius: 40px;
+    border: none;
+}
+
+/* LOGIN PAGE  */
+
+.login {
+    padding-top: 50px;
+    margin-bottom: 200px;
+}
+
+.login form {
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin: 0 auto;
+}
+
+.login form img {
+    width: 123px;
+    margin-bottom: 50px;
+}
+
+.login form input,
+.login form button {
+    width: 100%;
+    margin-bottom: 20px;
+    height: 57px;
+    cursor: pointer;
+    border: none;
+    border-radius: 80px;
+}
+
+.login form input {
+    padding-left: 20px;
+    font-size: 1vw;
+}
+
+.login form button {
+    background-color: var(--green);
+    color: #fff;
+    font-size: 1.4vw;
+}
+    
+/* RESULTS PAGE  */
+
+#result {
+    padding-top: 50px;
+    margin-bottom: 20px;
+}
+
+#result section{
+    display:flex;
+    align-items: center;
+    border-radius: 50px;
+    background-color: var(--header-bg);
+    margin: 50px;
+}
+
+h1 {
+    color: var(--text-color);
+    font-size: 4vw;
+    margin-bottom: 20px;
+}
+
+#result img {
+    border-radius: 25px;
+    margin: 25px;
+    margin-right:30px;
+    width: 25%;
+}
+
+#result h2 {
+    width: 75%;
+    margin-right:30px;
+    font-size: 3vw;
+    color: var(--text-color);
+}
+
+#result button {
+    margin-right:30px;
+    font-size: 1vw;
+    margin-bottom: 10px;
+    color: #fff;
+    background-color: var(--red);
+    width: 20%;
+    cursor: pointer;
+    height: 50px;
+    border-radius: 40px;
+    border: none;
+}
+
+/* ADD RECIPE PAGE  */
+
+.add {
+    margin-bottom: 20px;
+    padding-bottom: 40px;
+}
+
+.add h1 {
+    font-size: 3vw;
+    margin-bottom: 30px;
+}
+
+.add form input, textarea{
+    width: 30%;
+    padding-left: 30px;
+    border: none;
+    margin-bottom: 15px;
+    height: 50px;
+    border-radius: 50px;
+    font-size: 1vw;
+    font-family: "Monts-Reg", sans-serif;
+    color: #818181;
+}
+
+.add form label {
+    font-size: 1vw;
+    margin-bottom: 15px;
+}
+
+.add form button {
+    font-size: 1vw;
+    color: #fff;
+    background-color: var(--green);
+    width: 35%;
+    cursor: pointer;
+    height: 50px;
+    border-radius: 40px;
+    border: none;
+    margin-top: 10px;
+}
+
+/* FAVORITES PAGE  */
+
+#favorite {
+    margin-bottom: 20px;
+}
+
+#favorite section{
+    display:flex;
+    align-items: center;
+    border-radius: 50px;
+    background-color: var(--header-bg);
+    margin: 50px;
+}
+
+#favorite img {
+    border-radius: 25px;
+    margin: 25px;
+    margin-right:30px;
+    width: 25%;
+}
+
+#favorite h2 {
+    width: 75%;
+    margin-right:30px;
+    font-size: 3vw;
+    color: var(--text-color);
+}
+
+#favorite button {
+    margin-right:30px;
+    font-size: 1vw;
+    margin-bottom: 10px;
+    color: #fff;
+    background-color: var(--red);
+    width: 20%;
+    cursor: pointer;
+    height: 50px;
+    border-radius: 40px;
+    border: none;
+}
+/* ERROR PAGE  */
+
+.error {
+    padding-top: 30px;
+    margin-bottom: 150px;
+}
+
+.error h1 {
+    color: var(--text-color);
+    font-size: 4vw;
+    margin-bottom: 30px;
+}
+
+.error h2 {
+    color: var(--text-color);
+    font-size: 2vw;
+}
+
+.error h2 a {
+    color: var(--text-color);
+    font-size: 2vw;
+    text-decoration: underline;
+}
