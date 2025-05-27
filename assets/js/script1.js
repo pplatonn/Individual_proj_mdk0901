@@ -10,8 +10,8 @@ fetch(url)
         for (let i = 0; i < data.results.length; i++) {
             resultDiv.insertAdjacentHTML("afterbegin", '<section>'
 
-                + '<h2>' + JSON.stringify(data.results[i].title).replaceAll('"', '') + '</h2>'
                 + '<img src=' + JSON.stringify(data.results[i].image) + '>'
+                + '<h2>' + JSON.stringify(data.results[i].title).replaceAll('"', '') + '</h2>'
                 + '<button onclick="torecept(' + JSON.stringify(data.results[i].id) + ')">Recept</button>'
                 + '<button onclick="addfav(this.parentNode)" class="favbtns">to favorites</button>'
                 + '</section>')
@@ -19,7 +19,7 @@ fetch(url)
     })
 
 function addfav(x) {
-    alert('Добавлено в избранное!')
+    alert('Added to favorites!')
     favsStr=""
     favsStr+=localStorage.getItem('favs')
     favsStr+=x.outerHTML
